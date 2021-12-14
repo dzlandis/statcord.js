@@ -1,7 +1,7 @@
 // Modules
 const fetch = require('node-fetch');
 const si = require('systeminformation');
-const ShardingUtil = require('./clusterUtil');
+const ShardingUtil = require('./util/cluster');
 const { EventEmitter } = require('events');
 const util = require('util');
 const fs = require('fs');
