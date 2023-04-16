@@ -50,8 +50,8 @@ class ShardingClient extends EventEmitter {
       );
     // Manager error handling
     if (!manager) throw new Error('"manager" is missing or undefined');
-    if (!(manager instanceof this.discord_hybrid_sharding.Manager))
-      throw new TypeError('"manager" is not a discord-hybrid-sharding manager');
+    // if (!(manager instanceof this.discord_hybrid_sharding.Manager))
+    //   throw new TypeError('"manager" is not a discord-hybrid-sharding manager');
     // Auto post arg checking
     if (!autopost == null || autopost == undefined) autopost = true;
     if (typeof autopost !== 'boolean')
